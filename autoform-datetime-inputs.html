@@ -1,0 +1,22 @@
+<template name="datetimeInputs">
+  <div class="form-group datetime-inputs form-inline" data-schema-key="{{dataSchemaKey}}">
+    <div class="input-group date">
+      <label for="{{calendarInputId}}" class="input-group-addon calendar-label"><i class="{{atts.calendarButtonClasses}}"></i></label>
+      <input id="{{calendarInputId}}" type="text" data-datepart="date" class="form-control" value="{{ dateStr }}" />
+    </div>
+
+    <div class="input-group time">
+      <input type="text" data-datepart="time" class="form-control" value="{{ timeStr }}" />
+      <input type="hidden" data-datepart="meridian" class="form-control" value="{{ meridian }}" />
+      <span class="input-group-btn">
+        <button type="button" class="btn btn-default form-control dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+          {{ meridian }} <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a class="meridian-option" data-value="AM" href="#">AM</a></li>
+          <li><a class="meridian-option" data-value="PM" href="#">PM</a></li>
+        </ul>
+      </span>
+    </div>
+  </div>
+</template>

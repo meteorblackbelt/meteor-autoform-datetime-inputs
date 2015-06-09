@@ -1,0 +1,23 @@
+.datetime-inputs.form-inline .date.input-group, .datetime-inputs.form-inline .time.input-group {
+  display: inline-table;
+  vertical-align: middle;
+}
+
+.datetime-inputs.form-inline .date.input-group .input-group-addon, .datetime-inputs.form-inline .time.input-group .input-group-addon,
+.datetime-inputs.form-inline .date.input-group .input-group-btn, .datetime-inputs.form-inline .time.input-group .input-group-btn, 
+.datetime-inputs.form-inline .date.input-group .form-control, .datetime-inputs.form-inline .time.input-group .form-control {
+  width: auto;
+}
+
+.datetime-inputs.form-inline .date.input-group > input.form-control {
+  width: 7em;
+}
+
+.datetime-inputs.form-inline .time.input-group > input.form-control {
+  width: 4em;
+}
+
+.datetime-inputs.form-inline .time.input-group .input-group-btn .btn {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
