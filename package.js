@@ -1,7 +1,7 @@
 Package.describe({
   name: 'meteorblackbelt:autoform-datetime-inputs',
   summary: 'Custom sate/time inputs for AutoForm',
-  version: '0.0.1',
+  version: '0.0.2',
   documentation: null
 });
 

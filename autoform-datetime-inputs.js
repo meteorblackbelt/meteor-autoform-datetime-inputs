@@ -77,7 +77,13 @@ AutoForm.addInputType("datetime-inputs", {
 
     if (date && date.length && time && time.length) {
       var combined = [ date, time, meridian ].join(' ');
-      return moment(combined, "MM/DD/YYYY h:mm A").toDate();
+      var isValid = moment(combined, "MM/DD/YYYY h:mm A", true).isValid();
+      if (isValid) {
+        return moment(combined, "MM/DD/YYYY h:mm A").toDate();
+      }
+      else {
+        return null;
+      }
     }
   }
 });
